@@ -30,44 +30,35 @@ html,body{
     z-index: 5;
 }
 #list li:nth-child(1){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg6.jpg);
     /*position:relative;*/
 }
-/*.list .show1 a img{width:60%;*/
-    /*height:60%;}*/
-/*#list .show1 a img{*/
-    /*width:140px;*/
-    /*height:140px;*/
-    /*position:absolute;*/
-    /*top:43%;*/
-    /*left:40%;*/
-/*}*/
-.show1 a img{
-position:absolute;
-    top:43%;
-    left:40%;
-    width:140px;
-    height:140px;
-}
-#list .show1 .img2{
-    width:103px;
-    height:46px;
+.a1 .finger{
+    width:260px;
+    height:260px;
+    left:50%;
+    top:50%;
     position:absolute;
-   bottom: 388px;
-    left:268px;
-    display:none;
+    margin-left:-130px;
+    margin-top:-130px;
 }
-#list .show1 .img2.select{
-    -webkit-transform: translate(0,-140px);
-    transform:translate(0,-140px);
-    -webkit-transition:0.5s ease-out;
-    transition:0.5s ease-out;
-}
+/*.a1 .hua{*/
+    /*width:103px;*/
+    /*height:46px;*/
+    /*position:absolute;*/
+    /*top:62%;*/
+    /*left:50%;*/
+    /*margin-left: -51px;*/
+    /*display:block;*/
+/*}*/
 
-.phone{
-    width:100%;
-    height:100%;
-}
+/*#a1 .hua.select{*/
+    /*-webkit-transform: translate(0,-26%);*/
+    /*transform:translate(0,-26%);*/
+    /*-webkit-transition:0.5s ease-out;*/
+    /*transition:0.5s ease-out;*/
+/*}*/
+
 
 #a2 img{
     animation-duration:5s;
@@ -75,17 +66,20 @@ position:absolute;
     animation-iteration-count:2;
 
 }
-.show2 img{
+.a2 img{
     width:200px;
     height:200px;
-
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left: -100px;
 }
 
+
 .show2 .a2 .p1,.show2 .a2 .p2{
-    color:yellow;
-    font-size: 100px;
-    height:100px;
-    line-height: 100px;
+    /*color:yellow;*/
+    /*height:100px;*/
+    /*line-height: 100px;*/
 }
 
 .a2 p:nth-child(even){
@@ -104,14 +98,7 @@ position:absolute;
     transition:1s;
     -webkit-transition:1s;
 }
-/*#a2 p .speak{*/
-    /*font-size:1em;*/
-    /*text-align: center;*/
-    /*transform: translate(0,0);*/
-    /*-webkit-transform: translate(0,0);*/
-    /*transition:1s;*/
-    /*-webkit-transition:1s;*/
-/*}*/
+
 #a2 .p1{
     color:dodgerblue;
 }
@@ -136,6 +123,7 @@ position:absolute;
 }
 .a3 img{
     -webkit-animation:touchMove 5s ease-out;
+    animation:touchMove 5s ease-out;
     width:84%;
     height:84%;
     margin:20% 8%;
@@ -143,35 +131,37 @@ position:absolute;
 }
 @keyframes touchMove {
     0%{
-        /*-webkit-transform: scale(0.5);*/
         -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
     }
     50%{
         -webkit-transform:rotate(-180deg);
+        transform:rotate(-180deg);
     }
     100%{
-        /*-webkit-transform: scale(1.0);*/
         -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }
 @-webkit-keyframes touchMove {
     0%{
-        /*-webkit-transform: scale(0.5);*/
         -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
     }
     50%{
         -webkit-transform:rotate(-180deg);
+        transform:rotate(-180deg);
     }
     100%{
-        /*-webkit-transform: scale(0.5);*/
         -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
     }
 }
 
 #loading{
     width: 100%;
     height: 100%;
-    position: absolute;
+
 
 }
 .loadBox{
@@ -181,7 +171,7 @@ position:absolute;
     background: #fff;
     border-radius: 10px;
     position: absolute;
-    top:20%;
+    top:80%;
     overflow: hidden;
 }
 .progress{
@@ -194,6 +184,7 @@ position:absolute;
     transition: 1s;
     -webkit-transition: 1s;
     -webkit-animation:touchMove1 5s ease-out infinite;
+    animation:touchMove1 5s ease-out infinite;
 }
 
 @keyframes touchMove1 {
@@ -238,12 +229,7 @@ width:0;
     width:50%;
     height:50%;
 }
-/*.show4 .a4 .letter{*/
-    /*width:px;*/
-    /*height:px;*/
-    /*float:left;*/
-    /*font-size: 16px;*/
-/*}*/
+
 #a4{width:100%;
     position:absolute;
     bottom:100px;
@@ -260,8 +246,6 @@ width:0;
     line-height: 100px;
     margin-right: 15px;
     padding:0 20px;
-    /*position:absolute;*/
-    /*bottom:0;*/
 
 }
 .a4 div:nth-child(even){
@@ -280,89 +264,13 @@ width:0;
     transition:5s;
     -webkit-transition:5s;
 }
-/*第二种方法 可以观看整个过程运动*/
-/*#a4 div:nth-child(even){*/
-    /*transition: 1s;*/
-    /*-webkit-transition: 1s;*/
-    /*-webkit-animation:touchMove3 10s ease-out infinite;*/
 
-/*}*/
-
-/*@keyframes touchMove3 {*/
-    /*0%{*/
-        /*transform: translate(0,-50px);*/
-        /*-webkit-transform: translate(0,-50px);*/
-
-    /*}*/
-    /*50%{*/
-        /*transform: translate(0,50px);*/
-        /*-webkit-transform: translate(0,50px);*/
-    /*}*/
-    /*100%{*/
-        /*transform: translate(0,0);*/
-        /*-webkit-transform: translate(0,0);*/
-    /*}*/
-/*}*/
-/*@-webkit-keyframes touchMove3 {*/
-    /*0%{*/
-        /*transform: translate(0,-50px);*/
-        /*-webkit-transform: translate(0,-50px);*/
-    /*}*/
-    /*50%{*/
-        /*transform: translate(0,50px);*/
-        /*-webkit-transform: translate(0,50px);*/
-    /*}*/
-    /*100%{*/
-        /*transform: translate(0,0);*/
-        /*-webkit-transform: translate(0,0);*/
-
-    /*}*/
-/*}*/
-
-
-/*#a4 div:nth-child(odd){*/
-    /*transition: 1s;*/
-    /*-webkit-transition: 1s;*/
-    /*-webkit-animation:touchMove4 10s ease-out infinite;*/
-/*}*/
-
-/*@keyframes touchMove4 {*/
-    /*0%{*/
-        /*transform: translate(0,50px);*/
-        /*-webkit-transform: translate(0,50px);*/
-
-    /*}*/
-    /*50%{*/
-        /*transform: translate(0,-50px);*/
-        /*-webkit-transform: translate(0,-50px);*/
-    /*}*/
-    /*100%{*/
-        /*transform: translate(0,0);*/
-        /*-webkit-transform: translate(0,0);*/
-    /*}*/
-/*}*/
-/*@-webkit-keyframes touchMove4 {*/
-    /*0%{*/
-        /*transform: translate(0,50px);*/
-        /*-webkit-transform: translate(0,50px);*/
-    /*}*/
-    /*50%{*/
-        /*transform: translate(0,-50px);*/
-        /*-webkit-transform: translate(0,-50px);*/
-    /*}*/
-    /*100%{*/
-        /*transform: translate(0,0);*/
-        /*-webkit-transform: translate(0,0);*/
-
-    /*}*/
-/*}*/
 #a4 ul{
     position:absolute;
     top:-650px;
 }
 #a4 ul .li1{
     font-size: 2.5em;
-    /*margin-left:15px;*/
     position:absolute;
     top:0;
     left:0;
@@ -443,58 +351,21 @@ width:0;
     top:700px;
     left:400px;
 }
+.a5 .pp1{
+    transform: translate(0,-600px);
+    -webkit-transform: translate(0,-600px);
+}
 #a5 .pp1{
     font-size: 2.5em;
-    color:red;
+    color:black;
     padding:10px 60px;
-    font-family:"Microsoft Yahei";
-}
-.a5 .pp1.pp2{
+    font-family: sans-serif;
     transform: translate(0,0);
     -webkit-transform: translate(0,0);
+    transition:10s;
+    -webkit-transition:10s;
 }
-#a5 .pp1.pp2{
-    color:cornflowerblue;
-    transform: translate(230px,0);
-    -webkit-transform: translate(230px,0);
-    transition:5s;
-    -webkit-transition:5s;
-}
-.a5 .pp1.pp3{
-    transform: translate(0,-500px);
-    -webkit-transform: translate(0,-500px);
-}
-#a5 .pp1.pp3{
-    color:saddlebrown;
-    transform: translate(0,0);
-    -webkit-transform: translate(0,0);
-    transition:5s;
-    -webkit-transition:5s;
-}
-.a5 .pp1.pp4{
-    transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-}
-#a5 .pp1.pp4{
-    color:red;
-    transform:rotate(0deg);
-    -webkit-transform:rotate(0deg);
-    transition:5s;
-    -webkit-transition:5s;
-}
-.a5 .pp1.pp5{
-    margin-top: 15px;
-    transform: translate(-500px,0);
-    -webkit-transform: translate(-500px,0);
-}
-#a5 .pp1.pp5{
 
-    color:purple;
-    transform: translate(0,0);
-    -webkit-transform: translate(0,0);
-    transition:5s;
-    -webkit-transition:5s;
-}
 .a5 .fly{
     transform: translate(-500px,0);
     -webkit-transform: translate(-500px,0);
@@ -639,19 +510,19 @@ width:0;
 
 
 #list li:nth-child(2){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(3){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(4){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(5){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(6){
-    background-image:url(../img/bg6.jpg) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(7){
     background-image:url(../img/bg7.gif) ;
