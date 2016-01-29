@@ -30,7 +30,7 @@ html,body{
     z-index: 5;
 }
 #list li:nth-child(1){
-    background-image:url(../img/bg1.jpg) ;
+    background-image:url(../img/bg6.jpg) ;
     /*position:relative;*/
 }
 /*.list .show1 a img{width:60%;*/
@@ -62,6 +62,11 @@ position:absolute;
     transform:translate(0,-140px);
     -webkit-transition:0.5s ease-out;
     transition:0.5s ease-out;
+}
+
+.phone{
+    width:100%;
+    height:100%;
 }
 
 #a2 img{
