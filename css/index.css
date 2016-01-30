@@ -7,6 +7,36 @@ html,body{
     height:100%;
     overflow: hidden;
 }
+.music{
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 21px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/music.svg") ;
+    background-size: 100% 100%;
+}
+
+.music.move{
+    -webkit-animation: audioMove 1s linear 0s infinite both;
+    animation: audioMove 1s linear 0s infinite both;
+}
+
+@-webkit-keyframes audioMove {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes audioMove {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 #main{
     width: 640px;
     height:1008px;
@@ -74,14 +104,6 @@ html,body{
     left:50%;
     margin-left: -100px;
 }
-
-
-.show2 .a2 .p1,.show2 .a2 .p2{
-    /*color:yellow;*/
-    /*height:100px;*/
-    /*line-height: 100px;*/
-}
-
 .a2 p:nth-child(even){
     transform: translate(100px,0);
     -webkit-transform: translate(100px,0);
@@ -90,21 +112,7 @@ html,body{
     transform: translate(-100px,0);
     -webkit-transform: translate(-100px,0);
 }
-#a2 .p1,#a2 .p2{
-    font-size:4em;
-    text-align: center;
-    transform: translate(0,0);
-    -webkit-transform: translate(0,0);
-    transition:1s;
-    -webkit-transition:1s;
-}
 
-#a2 .p1{
-    color:dodgerblue;
-}
-#a2 .p2{
-    color:purple;
-}
 #a2 .p3,#a2 .p4,#a2 .p5{
     color:red;
     font-size:3em;
@@ -122,6 +130,7 @@ html,body{
     animation-iteration-count:2;
 }
 .a3 img{
+
     -webkit-animation:touchMove 5s ease-out;
     animation:touchMove 5s ease-out;
     width:84%;
@@ -322,6 +331,9 @@ width:0;
 }
 
 .a5 .ptop{
+    position:absolute;
+    top:5%;
+    left:30%;
      transform:rotate(60deg);
     -webkit-transform:rotate(60deg);
 }
@@ -350,6 +362,10 @@ width:0;
     position:absolute;
     top:700px;
     left:400px;
+}
+.jingli{
+    position:absolute;
+    top:20%;
 }
 .a5 .pp1{
     transform: translate(0,-600px);
@@ -525,7 +541,7 @@ width:0;
     background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(7){
-    background-image:url(../img/bg2.jpg) ;
+    background-image:url(../img/bg7.gif) ;
 }
 #list li:nth-child(8){
     background-image:url(../img/bg6.jpg) ;
@@ -538,6 +554,7 @@ width:0;
     left:0;
     z-index:-1;
 }
+
 #a8 .pp{
     font-size: 2.3em;
     font-family: sans-serif;
