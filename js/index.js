@@ -26,7 +26,7 @@ finger.onclick=function(){
 };
 //刚进入就滑动
 
-
+//
 [].forEach.call(oLis,function(){
     var oLi = arguments[0];
     oLi.index = arguments[1];
@@ -74,25 +74,6 @@ function end(e) {
                 this.style.webkitTransition = "";
             }
             this.firstElementChild.id="a"+(this.index+1);
-            $("#a2 img").addClass('animated shake');
-            setTimeout(function () {
-                $("#a2 img").removeClass('shake');
-            }, 8000);
-
-            $("#a2 p span.ask").addClass("speak");
-            setTimeout(function () {
-                $("#a2 p span.fill").addClass("animated lightSpeedOut");
-            }, 1000);
-            setTimeout(function () {
-                $("#a2 p span.fill").removeClass("animated lightSpeedOut");
-            }, 10000);
-
-            $("#a3 .detail").addClass("animated rubberBand");
-            $("#a8 .pp1").addClass("animated bounce");
-            $("#a8 .pp2").addClass("animated flash");
-
-
-
 
         }, false)
     }
