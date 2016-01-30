@@ -1,7 +1,7 @@
 var main = document.querySelector("#main");
 var oLis = document.querySelectorAll("#list>li");
-//var finger=document.querySelector(".finger");
-//var slider=document.querySelector(".hua");
+var finger=document.querySelector(".finger");
+var slider=document.querySelector(".hua");
 var a3=document.querySelector(".a3");
 var img=a3.querySelector("img");
 
@@ -14,13 +14,17 @@ if(winW/winH<desW/desH){//ï¿½ï¿½ï¿½Õ¸ß¶È±ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½
 }else{//ï¿½ï¿½ï¿½Õ¿ï¿½È±ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿?
     main.style.webkitTransform = "scale("+winW/desW+")";
 }
-//finger.onclick=function(){
-//    slider.style.display="block";
-//    setTimeout(function(){
-//        slider.setAttribute("class","hua select")
-//    },500)
-//
-//};
+finger.onclick=function(){
+    slider.style.display="block";
+    setTimeout(function(){
+        slider.setAttribute("class","hua select")
+    },500);
+    setTimeout(function(){
+        slider.style.display="none";
+    },1500)
+
+};
+//¸Õ½øÈë¾Í»¬¶¯
 
 
 [].forEach.call(oLis,function(){

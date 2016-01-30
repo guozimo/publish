@@ -42,22 +42,22 @@ html,body{
     margin-left:-130px;
     margin-top:-130px;
 }
-/*.a1 .hua{*/
-    /*width:103px;*/
-    /*height:46px;*/
-    /*position:absolute;*/
-    /*top:62%;*/
-    /*left:50%;*/
-    /*margin-left: -51px;*/
-    /*display:block;*/
-/*}*/
+.a1 .hua{
+    width:103px;
+    height:46px;
+    position:absolute;
+    top:62%;
+    left:50%;
+    margin-left: -51px;
+    display:none;
+}
 
-/*#a1 .hua.select{*/
-    /*-webkit-transform: translate(0,-26%);*/
-    /*transform:translate(0,-26%);*/
-    /*-webkit-transition:0.5s ease-out;*/
-    /*transition:0.5s ease-out;*/
-/*}*/
+.a1 .hua.select{
+    -webkit-transform: translate(0,-260px);
+    transform:translate(0,-260px);
+    -webkit-transition:0.5s ease-out;
+    transition:0.5s ease-out;
+}
 
 
 #a2 img{
@@ -465,7 +465,7 @@ width:0;
 }
 .a7 div{
     font-size: 5em;
-    color:#fff;
+    color:blue;
     position:absolute;
 
 }
@@ -525,7 +525,7 @@ width:0;
     background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(7){
-    background-image:url(../img/bg7.gif) ;
+    background-image:url(../img/bg2.jpg) ;
 }
 #list li:nth-child(8){
     background-image:url(../img/bg6.jpg) ;
