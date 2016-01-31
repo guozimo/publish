@@ -61,6 +61,7 @@ html,body{
 }
 #list li.zIndex{
     z-index: 5;
+    visibility: visible;
 }
 #list li:nth-child(1){
     background-image:url(../img/bg6.jpg);
@@ -666,4 +667,7 @@ left:17%;}
     transform-origin: top center;
     -webkit-animation-name: swing;
     animation-name: swing;
+}
+#list li{
+    visibility: hidden;
 }
