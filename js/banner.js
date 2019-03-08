@@ -4,9 +4,9 @@ var winW = document.documentElement.clientWidth;
 var winH = document.documentElement.clientHeight;
 var desW = 640;
 var desH = 1008;
-if(winW/winH<desW/desH){//°´ÕÕ¸ß¶È±ÈÀıÈ¥Ëõ·Å
+if(winW/winH<desW/desH){//ï¿½ï¿½ï¿½Õ¸ß¶È±ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½
     main.style.webkitTransform = "scale("+winH/desH+")";
-}else{//°´ÕÕ¿í¶È±ÈÀıÈ¥Ëõ·Å
+}else{//ï¿½ï¿½ï¿½Õ¿ï¿½È±ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½
     main.style.webkitTransform = "scale("+winW/desW+")";
 }
 
@@ -30,16 +30,19 @@ function move(e){
     [].forEach.call(oLis,function(){
         arguments[0].className = "";
         if(arguments[1]!=index){
+            // å¦‚æœå¾ªç¯çš„é¡¹ç›® å’Œå½“å‰è§¦å‘æ»‘åŠ¨çš„å…ƒç´ indexä¸ç›¸ç­‰  é‚£ä¹ˆæŠŠå¾ªç¯çš„é¡¹éšè—
             arguments[0].style.display = "none"
         }
         arguments[0].firstElementChild.id="";
 
     });
-    if(movePos>0){/*¡ı   movePosÊÇÕıµÄÖµ*/
+    if(movePos>0){/*ï¿½ï¿½   movePosï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ*/
+       // å‘ä¸‹æ»‘åŠ¨ æ˜¯ä¸Šä¸€é¡µ
         this.prevSIndex = (index == 0?oLis.length-1:index-1);
         //oLis[this.prevSIndex].style.webkitTransform = "translate(0,"+(-winH+movePos)+"px)";
         var duration = -winH+movePos;
-    }else if(movePos<0){/*¡ü*/
+    }else if(movePos<0){/*ï¿½ï¿½*/
+        // å‘ä¸Šæ»‘åŠ¨ æ˜¯ä¸‹ä¸€é¡µ
         this.prevSIndex = (index == oLis.length-1?0:index+1);
         //oLis[this.prevSIndex].style.webkitTransform = "translate(0,"+(winH+movePos)+"px)";
         var duration = winH+movePos;
@@ -50,7 +53,7 @@ function move(e){
     oLis[this.prevSIndex].style.display ="block";
 }
 function end(e){
-    if(this.flag){ //ÎªÁËÇø·ÖÊÇµã»÷ÊÂ¼ş»¹ÊÇ´¥ÃşÊÂ¼ş
+    if(this.flag){ //Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
         oLis[this.prevSIndex].style.webkitTransform = "translate(0,0)";
         oLis[this.prevSIndex].style.webkitTransition = "0.5s ease-out";
         oLis[this.prevSIndex].addEventListener("webkitTransitionEnd",function(e){
